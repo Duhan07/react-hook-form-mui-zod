@@ -59,8 +59,12 @@ export function RHFAutocomplete<T extends FieldValues>({
 							label={label}
 						/>
 						<Button></Button>
-					)}
-					renderOption={(props, option, { selected }) => (
+						<Button></Button>
+						<Select>
+	</Select>
+	)
+}
+renderOption={(props, option, { selected }) => (
 						<Box component="li" {...props}>
 							<Checkbox
 								icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
@@ -69,7 +73,7 @@ export function RHFAutocomplete<T extends FieldValues>({
 								checked={selected}
 							/>
 							{option.label}
-						</Box>
+</Box>
 					)}
 				/>
 			)
