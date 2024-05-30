@@ -1,1 +1,4 @@
 npx @biomejs/biome check ./src/components
+yarn lint
+yarn prettify-staged
+yarn test

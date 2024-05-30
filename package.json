@@ -10,7 +10,9 @@
 		"prepare": "husky",
 		"check": "npx @biomejs/biome check --apply ./src/components",
 		"format": "npx @biomejs/biome format --write ./src/components",
-		"lint": "npx @biomejs/biome lint ./src/components "
+		"prettify-staged": "lint-staged",
+		"lint": "biome lint ./",
+		"test": "biome test ./"
 	},
 	"husky": {
 		"hooks": {
@@ -21,11 +23,6 @@
 		"src/**/*.{ts,tsx}": [
 			"npx @biomejs/biome check",
 			"npx @biomejs/biome format"
-		],
-		"src/**/*.{js,jsx}": [
-			"npx @biomejs/biome check",
-			"npx @biomejs/biome format",
-			"git add"
 		]
 	},
 	"dependencies": {
@@ -40,7 +37,6 @@
 		"antd": "^5.17.4",
 		"axios": "^1.7.2",
 		"date-fns": "^3.6.0",
-		"lint-staged": "^12.3.2",
 		"lodash": "^4.17.21",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
@@ -48,7 +44,7 @@
 		"zod": "^3.23.8"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.7.3",
+		"@biomejs/biome": "^1.7.3",
 		"@types/react": "^18.2.66",
 		"@types/react-dom": "^18.2.22",
 		"@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -58,6 +54,7 @@
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.4.6",
 		"husky": "^9.0.11",
+		"lint-staged": "^15.2.5",
 		"typescript": "^5.2.2",
 		"vite": "^5.2.0"
 	}
