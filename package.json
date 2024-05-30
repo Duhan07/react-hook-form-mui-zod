@@ -19,7 +19,7 @@
 	},
 	"lint-staged": {
 		"src/**/*.{ts,tsx}": [
-			"npx @biomejs/biome check --apply",
+			"npx @biomejs/biome check",
 			"npx @biomejs/biome format --write"
 		]
 	},
