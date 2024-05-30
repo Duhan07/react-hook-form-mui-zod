@@ -6,7 +6,6 @@ import { Controller, useFormContext } from "react-hook-form"
 import type { FieldValues, Path } from "react-hook-form"
 import type { Option } from "../types/option"
 import type { Schema } from "../types/schema"
-import { schema } from "../types/schema"
 
 type Props<T extends FieldValues> = {
 	name: Path<T>

@@ -10,7 +10,7 @@
 		"prepare": "husky",
 		"check": "npx @biomejs/biome check --apply ./src/components",
 		"format": "npx @biomejs/biome format --write ./src/components",
-		"lint": "npx @biomejs/biome lint --apply  ./src/components "
+		"lint": "npx @biomejs/biome lint ./src/components "
 	},
 	"dependencies": {
 		"@emotion/react": "^11.11.4",
