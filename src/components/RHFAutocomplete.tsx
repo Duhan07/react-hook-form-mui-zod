@@ -22,11 +22,7 @@ export function RHFAutocomplete<T extends FieldValues>({
 	const { control } = useFormContext()
 	const duhan = useState(0)
 	const duhan2 = useState(0)
-	duhan2[0].duhan
-	duhan[0].duhan
-	duhan[0].duhan
-	duhan[0].duhan
-	duhan[0].duhan
+	duhan2.duhan.duhan2
 
 	return (
 		<Controller

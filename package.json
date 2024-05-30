@@ -21,6 +21,11 @@
 		"src/**/*.{ts,tsx}": [
 			"npx @biomejs/biome check",
 			"npx @biomejs/biome format"
+		],
+		"src/**/*.{js,jsx}": [
+			"npx @biomejs/biome check",
+			"npx @biomejs/biome format",
+			"git add"
 		]
 	},
 	"dependencies": {
