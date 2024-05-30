@@ -12,6 +12,17 @@
 		"format": "npx @biomejs/biome format --write ./src/components",
 		"lint": "npx @biomejs/biome lint ./src/components "
 	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{ts,tsx}": [
+			"npx @biomejs/biome check --apply",
+			"npx @biomejs/biome format --write"
+		]
+	},
 	"dependencies": {
 		"@emotion/react": "^11.11.4",
 		"@emotion/styled": "^11.11.5",

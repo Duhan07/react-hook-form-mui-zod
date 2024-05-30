@@ -23,6 +23,7 @@ export function RHFAutocomplete<T extends FieldValues>({
 	const duhan = useState(0)
 	const duhan2 = useState(0)
 	duhan2[0].duhan
+	duhan2[1].duhan
 
 	return (
 		<Controller
