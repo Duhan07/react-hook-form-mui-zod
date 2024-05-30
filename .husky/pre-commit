@@ -1,1 +1,1 @@
-npx @biomejs/biome check --apply ./src/components
+npx @biomejs/biome check ./src/components

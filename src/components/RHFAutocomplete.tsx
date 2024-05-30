@@ -21,6 +21,7 @@ export function RHFAutocomplete<T extends FieldValues>({
 }: Props<T>) {
 	const { control } = useFormContext()
 	const duhan = useState(0)
+	const duhan2 = useState(0)
 
 	return (
 		<Controller
