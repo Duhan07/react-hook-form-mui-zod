@@ -1,13 +1,10 @@
-import { zodResolver } from "@hookform/resolvers/zod"
+
 import CheckBoxIcon from "@mui/icons-material/CheckBox"
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank"
 import { Autocomplete, Box, Checkbox, TextField } from "@mui/material"
-import { useState } from "react"
-import { useCallback } from "react"
 import { Controller, useFormContext } from "react-hook-form"
 import type { FieldValues, Path } from "react-hook-form"
 import type { Option } from "../types/option"
-import type { Schema } from "../types/schema"
 
 
 type Props<T extends FieldValues> = {
@@ -45,12 +42,12 @@ export function RHFAutocomplete<T extends FieldValues>({
 					onChange={(_, newValue) => {
 						onChange(newValue?.map((item) => item.id))
 					}}
-					disableCloseOnSelect
-					multiple
+					disableCloseOnSelect={true}
+					multiple={true}
 					renderInput={(params) => (
 						<TextField
 							{...params}
-							fullWidth
+							fullWidth={true}
 							inputRef={ref}
 							error={!!error}
 							helperText={error?.message}
