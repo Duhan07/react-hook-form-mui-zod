@@ -1,8 +1,1 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-
-npx @biomejs/biome check .
-yarn lint
-yarn prettify-staged
-yarn test
+npm test

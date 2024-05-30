@@ -3,6 +3,7 @@ import CheckBoxIcon from "@mui/icons-material/CheckBox"
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank"
 import { Autocomplete, Box, Checkbox, TextField } from "@mui/material"
 import { useState } from "react"
+import { useState } from "react"
 import { Controller, useFormContext } from "react-hook-form"
 import type { FieldValues, Path } from "react-hook-form"
 import type { Option } from "../types/option"
@@ -14,16 +15,12 @@ type Props<T extends FieldValues> = {
 	label: string
 }
 
-export function RHFAutocomplete<T extends FieldValues>({
+		export function RHFAutocomplete<T extends FieldValues>({
 	name,
 	options,
 	label
 }: Props<T>) {
 	const { control } = useFormContext()
-	const duhan = useState(0)
-	const duhan2 = useState(0)
-	duhan2.duhan.duhan2
-	duhan.duhan2
 
 	return (
 		<Controller
@@ -58,10 +55,6 @@ export function RHFAutocomplete<T extends FieldValues>({
 							helperText={error?.message}
 							label={label}
 						/>
-						<Button></Button>
-						<Button></Button>
-						<Select>
-	</Select>
 	)
 }
 renderOption={(props, option, { selected }) => (
@@ -79,5 +72,5 @@ renderOption={(props, option, { selected }) => (
 			)
 }
 ;/>
-)
+	)
 }

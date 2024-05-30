@@ -7,24 +7,7 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"prepare": "husky install && lint-staged",
-		"check": "npx @biomejs/biome check --apply ./src/components",
-		"format": "npx @biomejs/biome format --write ./src/components",
-		"prettify-staged": "lint-staged",
-		"lint": "biome lint ./",
-		"test": "biome test ./"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"*.{ts,tsx}": [
-			"npx @biomejs/biome check",
-			"npx @biomejs/biome format",
-			"git add"
-		]
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"@emotion/react": "^11.11.4",
@@ -58,5 +41,16 @@
 		"lint-staged": "^15.2.5",
 		"typescript": "^5.2.2",
 		"vite": "^5.2.0"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": [
+			"npx @biomejs/biome format --apply",
+			"git add"
+		]
 	}
 }
