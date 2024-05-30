@@ -9,7 +9,6 @@ import type { FieldValues, Path } from "react-hook-form"
 import type { Option } from "../types/option"
 import type { Schema } from "../types/schema"
 
-const duhan = "duhan"
 
 type Props<T extends FieldValues> = {
 	name: Path<T>

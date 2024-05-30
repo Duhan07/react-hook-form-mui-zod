@@ -9,7 +9,8 @@
 		"preview": "vite preview",
 		"prepare": "husky",
 		"format": "npx @biomejs/biome format --write .",
-		"check": "npx @biomejs/biome check --apply ."
+		"check": "npx @biomejs/biome check --apply .",
+		"lint-biome": "npx @biomejs/biome lint --apply ./src/components"
 	},
 	"dependencies": {
 		"@emotion/react": "^11.11.4",
