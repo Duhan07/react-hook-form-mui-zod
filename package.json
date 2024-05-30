@@ -22,7 +22,8 @@
 	"lint-staged": {
 		"*.{ts,tsx}": [
 			"npx @biomejs/biome check",
-			"npx @biomejs/biome format"
+			"npx @biomejs/biome format",
+			"git add"
 		]
 	},
 	"dependencies": {

@@ -2,7 +2,7 @@
 . "$(dirname "$0")/_/husky.sh"
 
 
-npx @biomejs/biome check ./src/components
+npx @biomejs/biome check .
 yarn lint
 yarn prettify-staged
 yarn test
