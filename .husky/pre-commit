@@ -1,1 +1,1 @@
-yarn check
+npx @biomejs/biome check --apply ./src/components
