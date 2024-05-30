@@ -9,13 +9,15 @@ import type { FieldValues, Path } from "react-hook-form"
 import type { Option } from "../types/option"
 import type { Schema } from "../types/schema"
 
+const duhan = "duhan"
+
 type Props<T extends FieldValues> = {
 	name: Path<T>
 	options: Option[]
 	label: string
 }
 
-		export function RHFAutocomplete<T extends FieldValues>({
+export function RHFAutocomplete<T extends FieldValues>({
 	name,
 	options,
 	label
@@ -55,9 +57,8 @@ type Props<T extends FieldValues> = {
 							helperText={error?.message}
 							label={label}
 						/>
-	)
-}
-renderOption={(props, option, { selected }) => (
+					)}
+					renderOption={(props, option, { selected }) => (
 						<Box component="li" {...props}>
 							<Checkbox
 								icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
@@ -66,11 +67,10 @@ renderOption={(props, option, { selected }) => (
 								checked={selected}
 							/>
 							{option.label}
-</Box>
+						</Box>
 					)}
 				/>
-			)
-}
-;/>
+			)}
+		/>
 	)
 }

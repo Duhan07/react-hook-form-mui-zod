@@ -1,13 +1,13 @@
-import { Stack, TextField } from "@mui/material";
-import { useFormContext } from "react-hook-form";
-import { RHFAutocomplete } from "../../components/RHFAutocomplete";
-import type { Schema } from "../types/schema";
+import { Stack, TextField } from "@mui/material"
+import { useFormContext } from "react-hook-form"
+import { RHFAutocomplete } from "../../components/RHFAutocomplete"
+import type { Schema } from "../types/schema"
 
 export function Users() {
 	const {
 		register,
-		formState: { errors },
-	} = useFormContext<Schema>();
+		formState: { errors }
+	} = useFormContext<Schema>()
 
 	return (
 		<Stack sx={{ gap: 2 }}>
@@ -29,9 +29,9 @@ export function Users() {
 				options={[
 					{ id: "1", label: "California" },
 					{ id: "2", label: "Texas" },
-					{ id: "3", label: "Miami" },
+					{ id: "3", label: "Miami" }
 				]}
 			/>
 		</Stack>
-	);
+	)
 }

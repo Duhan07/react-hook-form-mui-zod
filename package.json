@@ -8,7 +8,8 @@
 		"build": "tsc && vite build",
 		"preview": "vite preview",
 		"prepare": "husky",
-		"format": "npx @biomejs/biome format ."
+		"format": "npx @biomejs/biome format --write .",
+		"check": "npx @biomejs/biome check --apply ."
 	},
 	"dependencies": {
 		"@emotion/react": "^11.11.4",
